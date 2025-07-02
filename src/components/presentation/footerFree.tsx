@@ -118,7 +118,7 @@ export function Footer() {
             <div className="items-top mb-6 flex flex-wrap">
               <div className="w-6/12 pt-6 md:ml-auto md:px-4 md:pt-0 xl:w-3/12">
                 <span className="text-md mb-4 block font-medium text-primary">
-                  Company
+                  Resources
                 </span>
                 <ul className="list-unstyled">
                   {COMPANY.map(({ name, link }, key) => (
@@ -137,7 +137,7 @@ export function Footer() {
               </div>
               <div className="ml-auto w-6/12 pt-6 md:px-4 md:pt-0 xl:w-3/12">
                 <span className="text-md mb-4 block font-medium text-primary">
-                  Help and Support
+                  Community
                 </span>
                 <ul className="list-unstyled">
                   {HELP.map(({ name, link }, key) => (
@@ -156,7 +156,7 @@ export function Footer() {
               </div>
               <div className="ml-auto w-6/12 pt-6 md:px-4 md:pt-0 xl:w-3/12">
                 <span className="text-md mb-4 block font-medium text-primary">
-                  Resources
+                  Packages
                 </span>
                 <ul className="list-unstyled">
                   {RESOURCES.map(({ name, link }, key) => (
