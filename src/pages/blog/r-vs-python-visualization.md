@@ -3,7 +3,7 @@ title: "R's Data Visualization Ecosystem Outshines Python"
 date: 2025-06-01
 author: "Craig Smith"
 tags: ["visualization", "R", "Python"]
-image: "/blog2.jpg"
+image: "/blog/thumbnails/r-vs-python-visualization.png"
 layout: ../../layouts/BlogLayout.astro
 ---
 

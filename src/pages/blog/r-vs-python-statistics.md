@@ -3,7 +3,7 @@ title: "Why R Beats Python for Statistical Analysis & Modeling"
 date: 2025-06-01
 author: "Craig Smith"
 tags: ["statistics", "R", "Python"]
-image: "/blog1.jpg"
+image: "/blog/thumbnails/r-vs-python-statistics.png"
 layout: ../../layouts/BlogLayout.astro
 ---
 
