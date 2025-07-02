@@ -263,7 +263,7 @@ function NavList() {
       <li>
         <Typography
           as="a"
-          href="/blog/"
+          href={`${import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + "/"}blog/`}
           variant="small"
           color="blue-gray"
           className="font-bold text-blue-700 hover:underline"
@@ -331,7 +331,7 @@ export default function ComplexNavbar() {
       <div className="relative mx-auto flex items-center text-blue-gray-900">
         <Typography
           as="a"
-          href="/"
+          href={import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + "/"}
           className="mr-4 ml-2 cursor-pointer py-1.5 font-medium"
         >
           R Beats Python

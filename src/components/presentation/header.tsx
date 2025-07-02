@@ -43,7 +43,7 @@ export function HeroPresentation() {
               R was designed specifically for statistical computing and data analysis, giving it significant advantages over Python in many domains. While Python is excellent for general-purpose programming and machine learning, R shines in specialized areas that matter most to statisticians, researchers, and data analysts.
             </Typography>
             <div className="mt-12 flex flex-wrap justify-center gap-3 lg:justify-start">
-              <a href="/blog/">
+              <a href={`${import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + "/"}blog/`}>
                 <Button color="blue" className="flex items-center">
                   Read the Blog
                 </Button>

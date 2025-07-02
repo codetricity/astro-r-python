@@ -5,6 +5,7 @@
   "main": "assets/js/astro-launch-ui.min.js",
   "scripts": {
     "dev": "astro dev",
+    "dev:base": "astro dev --base /astro-r-python",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
