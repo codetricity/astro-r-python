@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeaderPresentation from "../components/presentation/header"
+import FeaturePresentation from "../components/presentation/feature"
+import FooterFreePresentation from "../components/presentation/footerFree"
+
+---
+
+<Layout title="R Beats Python - Where R Excels in Data Science and Statistics">
+	<main>
+    <HeaderPresentation client:only="react" />
+    <FeaturePresentation client:only="react" />
+    <FooterFreePresentation client:only="react" />
+  </main>
+</Layout>

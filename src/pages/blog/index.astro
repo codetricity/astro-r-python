@@ -1,0 +1,38 @@
+---
+import BlogLayout from '../../layouts/BlogLayout.astro';
+const postImports = import.meta.glob('./*.md', { eager: true });
+const posts = Object.entries(postImports)
+  .filter(([path]) => !path.endsWith('index.md'))
+  .map(([path, mod]) => {
+    const url = path.replace('./', '/blog/').replace('.md', '');
+    const title = mod.frontmatter.title;
+    const date = mod.frontmatter.date;
+    let content = '';
+    if (typeof mod.rawContent === 'string') content = mod.rawContent;
+    else if (typeof mod.content === 'string') content = mod.content;
+    const excerpt =
+      mod.frontmatter.excerpt ||
+      (typeof content === 'string'
+        ? content
+            .split('\n')
+            .find(line => line.trim() && !line.startsWith('#')) || ''
+        : '');
+    return { url, title, date, excerpt };
+  })
+  .sort((a, b) => new Date(b.date) - new Date(a.date));
+---
+
+<BlogLayout title="Blog">
+  <!-- <h1 class="text-4xl font-extrabold mb-10 text-blue-gray-900">Blog</h1> -->
+  <div class="space-y-8">
+    {posts.map(post => (
+      <a href={post.url} class="block rounded-xl bg-white shadow hover:shadow-lg transition-shadow border border-blue-100 p-6 group">
+        <div class="flex flex-col gap-2">
+          <h2 class="text-2xl font-bold text-blue-700 group-hover:underline mb-1">{post.title}</h2>
+          {post.date && <span class="text-xs text-gray-500 mb-2">{new Date(post.date).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</span>}
+          <p class="text-blue-gray-700 text-base">{post.excerpt}</p>
+        </div>
+      </a>
+    ))}
+  </div>
+</BlogLayout> 
