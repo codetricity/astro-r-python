@@ -38,10 +38,11 @@ export function HeroPresentation() {
               color="blue-gray"
               className="mb-8 lg:mr-32 leading-tight font-black"
             >
-              R Beats Python in <span className="text-blue">Key Areas</span>
+              R & Python: The Right Tool for the Right Job
             </Typography>
             <Typography variant="lead" color="blue-gray" className="lg:pr-32">
-              R was designed specifically for statistical computing and data analysis, giving it significant advantages over Python in many domains. While Python is excellent for general-purpose programming and machine learning, R shines in specialized areas that matter most to statisticians, researchers, and data analysts.
+              We believe both R and Python are powerful tools, each with unique strengths. Our mission is to help data scientists, analysts, and researchers make informed choices by showcasing R's superior capabilities in statistical computing, data visualization, and reproducible research.<br/><br/>
+              Explore practical comparisons, real-world examples, and domain-specific insights to discover where R truly excels—especially in academic and research settings.
             </Typography>
             <div className="mt-12 flex flex-wrap justify-center gap-3 lg:justify-start">
               <a href={`${import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + "/"}blog/`}>
