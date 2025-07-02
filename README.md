@@ -57,6 +57,7 @@ This comparison aims to explore:
 - No specific rules were established for AI to use the template effectively
 - Template constraints create a steeper learning curve for AI-assisted development
 - Performance likely improves with continued template usage and better AI guidance
+- Template has a business goal which helps to set up the user flow of the site
 
 ### Next Steps
 
@@ -67,6 +68,7 @@ the pro license, I suggest looking at other templates.
 with Bootstrap, our speed got better over time as we read more of the
 documentation.
 - **Template Integration**: Improve usage of template components across all pages (blog, index, etc.)
+- **Template as Reference**: we can add the template to the project as a reference.  Include screenshots as reference.
 
 ## Recommendations
 
