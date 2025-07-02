@@ -22,6 +22,12 @@ The goal is to evaluate the workflow efficiency, development speed, and final ou
 
 For the LLM-based approach example, see Jesse Casman's repository that demonstrates building an Astro site without using any template, relying solely on AI instructions and theme concepts.
 
+### Limitations of Comparison
+
+- I did not read the documentation for the template all in this test
+- I had no experience with Astro
+- I have limited experience with the underlying components, most importantly, I am weak in JavaScript syntax
+
 ## Key Findings
 
 This comparison aims to explore:
@@ -30,6 +36,54 @@ This comparison aims to explore:
 - **Customization**: What are the trade-offs between template constraints and full creative control?
 - **Maintenance**: How does ongoing development and updates differ between approaches?
 - **Learning Curve**: Which approach is more accessible for different skill levels?
+
+### Template vs LLM Insights
+
+**Template Advantages:**
+
+- Superior font choices and general layout compared to AI-generated designs
+- Professional visual quality that's difficult to achieve from scratch, even with AI assistance
+- Comprehensive component library and pre-built functionality
+
+**Template Challenges:**
+
+- Template is slightly outdated with older versions of key components like Astro
+- More difficult for AI to work with due to template-specific conventions and structure
+- Requires human understanding of template documentation to effectively guide AI
+- Blog posts and index pages initially didn't leverage template components effectively
+
+**AI Workflow Observations:**
+
+- No specific rules were established for AI to use the template effectively
+- Template constraints create a steeper learning curve for AI-assisted development
+- Performance likely improves with continued template usage and better AI guidance
+
+### Next Steps
+
+- **Purchase Pro Version**: If pursuing this template-based approach, upgrade to pro version for additional features.  However, before purchasing
+the pro license, I suggest looking at other templates.
+- **Establish AI Rules**: Set up project-specific rules and documentation for AI to work effectively with the template
+- **Human Learning**: Developer needs to learn template documentation and create/edit rules for AI assistance. When we used Sparrow and Front
+with Bootstrap, our speed got better over time as we read more of the
+documentation.
+- **Template Integration**: Improve usage of template components across all pages (blog, index, etc.)
+
+## Recommendations
+
+At the current time, this type of layout with icons and fonts may be difficult to achieve without
+a template.
+
+
+![icons layout](docs/icons.png)
+
+In order to move forward quickly, we should try to work with the LLM from scratch without a template and
+feed it styles from screenshots of what to build.
+
+If we cannot match the style of a template, we should use a template.
+
+This type of layout has also been difficult to replicate without AI.
+
+![footer](docs/footer.png)
 
 ## Resources
 
@@ -40,7 +94,6 @@ This comparison aims to explore:
 ## 👀 Information on Astro Launch UI Template
 
 Feel free to check [our documentation](https://www.creative-tim.com/learning-lab/astro/overview/astro-launch-ui) or jump into our [Discord server](https://discord.com/invite/TGZqBvZB).
-
 
 ## About This Template
 
@@ -55,6 +108,7 @@ This repository contains the **template-based implementation** using the Astro L
 ### Template Features
 
 The Astro Launch UI template offers a comprehensive starting point with:
+
 - Pre-built landing pages
 - Product showcase components
 - Shopping cart functionality
