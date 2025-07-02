@@ -10,5 +10,6 @@ const isProd = process.env.NODE_ENV === "production";
 // https://astro.build/config
 export default defineConfig({
   integrations: [react(), tailwind()],
-  site: "https://oppkey.github.io/astro-r-python",
+  site: "https://oppkey.github.io",
+  base: "/astro-r-python",
 });
