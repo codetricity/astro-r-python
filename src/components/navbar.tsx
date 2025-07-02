@@ -220,7 +220,7 @@ function NavListMenu() {
               {...triggers}
               className="hidden items-center gap-2 text-blue-gray-900 lg:flex lg:rounded-full"
             >
-              <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Pages{" "}
+              <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Resources{" "}
               <ChevronDownIcon
                 strokeWidth={2}
                 className={`h-3 w-3 transition-transform ${
@@ -240,7 +240,7 @@ function NavListMenu() {
         </MenuList>
       </Menu>
       <MenuItem className="flex items-center gap-2 text-blue-gray-900 lg:hidden">
-        <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Pages{" "}
+        <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Resources{" "}
       </MenuItem>
       <ul className="ml-6 flex w-full flex-col gap-1 lg:hidden">
         {renderItems}
@@ -272,23 +272,6 @@ function NavList() {
         </Typography>
       </li>
       <NavListMenu />
-      <AccountListMenu />
-
-      {navListItems.map(({ label, icon }, key) => (
-        <Typography
-          key={label}
-          as="a"
-          href="https://www.creative-tim.com/learning-lab/astro/quick-start/astro-launch-ui/"
-          variant="small"
-          color="blue-gray"
-          className="font-normal"
-        >
-          <MenuItem className="flex items-center gap-2 lg:rounded-full">
-            {React.createElement(icon, { className: "h-[18px] w-[18px]" })}{" "}
-            {label}
-          </MenuItem>
-        </Typography>
-      ))}
     </ul>
   );
 }
@@ -348,19 +331,6 @@ export default function ComplexNavbar() {
         >
           <Bars2Icon className="h-6 w-6" />
         </IconButton>
-        <a href="https://www.r-project.org/" target="_blank">
-          <Button size="sm" color="blue" variant="text">
-            <i className="fab fa-r-project text-lg leading-none" aria-hidden="true"></i>
-          </Button>
-        </a>
-        <a href="https://github.com/" target="_blank">
-          <Button size="sm" color="blue" variant="text">
-            <i className="fab fa-github text-xl leading-none" aria-hidden="true"></i>
-          </Button>
-        </a>
-        <a href="#features">
-          <Button color="blue">Explore R</Button>
-        </a>
       </div>
       <Collapse open={isNavOpen} className="overflow-scroll">
         <NavList />

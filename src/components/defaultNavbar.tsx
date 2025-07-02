@@ -146,7 +146,7 @@ function NavListMenu() {
               {...triggers}
               className="hidden items-center gap-2 text-blue-gray-900 lg:flex lg:rounded-full"
             >
-              <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Pages{" "}
+              <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Resources{" "}
               <ChevronDownIcon
                 strokeWidth={2}
                 className={`h-3 w-3 transition-transform ${
@@ -166,7 +166,7 @@ function NavListMenu() {
         </MenuList>
       </Menu>
       <MenuItem className="flex items-center gap-2 text-blue-gray-900 lg:hidden">
-        <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Pages{" "}
+        <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Resources{" "}
       </MenuItem>
       <ul className="ml-6 flex w-full flex-col gap-1 lg:hidden">
         {renderItems}
@@ -179,19 +179,6 @@ function NavList() {
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
       <NavListMenu />
-      <AccountListMenu />
-      <Typography
-        as="a"
-        href="https://www.creative-tim.com/learning-lab/astro/quick-start/astro-launch-ui/"
-        variant="small"
-        color="blue-gray"
-        className="font-normal"
-      >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
-          <CubeTransparentIcon className="h-[18px] w-[18px]" />
-          Docs
-        </ListItem>
-      </Typography>
     </List>
   );
 }
